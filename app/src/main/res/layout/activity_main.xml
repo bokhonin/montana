@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="ru.bokhonin.montana.MainActivity">
+
+    <TextView
+            android:text="Параметры сигнала"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="24sp" android:textStyle="normal|bold"
+            android:textAlignment="center" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <Switch
+            android:text="Vibration  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vibrationSwitch"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView2" android:layout_alignParentStart="true"/>
+    <Switch
+            android:text="Sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/soundSwitch"
+            android:layout_marginTop="12dp" android:layout_below="@+id/vibrationSwitch"
+            android:layout_alignEnd="@+id/vibrationSwitch" android:layout_alignParentStart="true"/>
+    <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            android:layout_marginEnd="56dp"
+            android:layout_alignBaseline="@+id/startButton" android:layout_alignBottom="@+id/startButton"
+            android:layout_alignParentEnd="true"/>
+    <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startButton"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/soundSwitch" android:layout_toStartOf="@+id/stopButton"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:id="@+id/currentStatusServiceTextView"
+            android:layout_below="@+id/stopButton" android:layout_alignStart="@+id/startButton"
+            android:layout_alignEnd="@+id/stopButton" android:textAlignment="center" android:textStyle="normal|bold"/>
+</RelativeLayout>
