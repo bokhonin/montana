@@ -114,7 +114,6 @@ public class MainActivity extends Activity {
 
         boolean savedSoundSwitch = sharedPreferences.getBoolean("mSoundSwitch", false);
         mSoundSwitch.setChecked(savedSoundSwitch);
-        // test 111222
     }
 
  }
