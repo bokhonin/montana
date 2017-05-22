@@ -9,8 +9,10 @@
 .externalNativeBuild
 *.log
 /app/build
+/.idea
 
 # Gradle
+/gradle
 build.gradle
 gradle.properties
 gradlew
